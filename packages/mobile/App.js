@@ -1,10 +1,18 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
-// import Button from './Button';
-import Button from '@beys/components';
+import {View} from 'react-native';
+import {Button, DoctorCard} from '@beys/components';
 
 const App = () => {
-  return <Button>hello</Button>;
+  return (
+    <View style={{flexDirection: 'column'}}>
+      <Button>hello from react native</Button>
+      <DoctorCard
+        name="Laurent Abcde"
+        profession="Medecin traitant"
+        address="76 avenue parmentier 75011 Paris"
+      />
+    </View>
+  );
 };
 
 export default App;

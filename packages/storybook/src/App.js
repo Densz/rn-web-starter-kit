@@ -1,12 +1,16 @@
 import React from "react";
-import { View, Text } from "react-native";
-import Button from "@beys/components";
+import { View } from "react-native";
+import { Button, DoctorCard } from "@beys/components";
 
 const App = () => {
   return (
     <View>
-      <Text>abdc</Text>
-      <Button />
+      <Button>Hello from web</Button>
+      <DoctorCard
+        name="Laurent Abcde"
+        profession="Medecin traitant"
+        address="76 avenue parmentier 75011 Paris"
+      />
     </View>
   );
 };
