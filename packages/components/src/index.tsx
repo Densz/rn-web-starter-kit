@@ -3,8 +3,19 @@ import { View, Text } from "react-native";
 
 const Button = () => {
   return (
-    <View>
-      <Text>Button from ethe mponents</Text>
+    <View
+      style={{
+        flex: 1,
+        padding: 10,
+        backgroundColor: "red",
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        paddingVertical: 200
+      }}
+    >
+      <View>
+        <Text>Button from ethe mponents</Text>
+      </View>
     </View>
   );
 };

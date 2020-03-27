@@ -5,17 +5,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "yarn workspaces run clean"
+    "storybook": "yarn workspace @beys/storybook run start",
+    "app:start": "yarn workspace @beys/mobile run start",
+    "app:ios": "yarn workspace @beys/mobile run ios",
+    "app:android": "yarn workspace @beys/mobile run android",
+    "clean": "rm -rf node_modules */**/node_modules",
+    "build:components": "yarn workspace @beys/components compile",
+    "watch": "wml add ./packages/components ./packages/mobile/node_modules/@beys/components && wml start"
   },
   "author": "",
   "license": "ISC",
   "workspaces": {
     "packages": [
       "packages/*"
-    ],
-    "nohoist": []
-  },
-  "dependencies": {
-    "react-native": "0.61.5"
+    ]
   }
 }
