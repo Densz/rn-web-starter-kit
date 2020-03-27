@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "storybook": "yarn workspace @beys/storybook run start",
+    "storybook": "yarn workspace @beys/storybook run storybook",
     "app:start": "yarn workspace @beys/mobile run start",
     "app:ios": "yarn workspace @beys/mobile run ios",
     "app:android": "yarn workspace @beys/mobile run android",

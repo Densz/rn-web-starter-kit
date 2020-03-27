@@ -1,24 +1,29 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 
 const Button = ({ children }: { children: JSX.Element | string }) => {
   return (
-    <View
-      style={{
-        backgroundColor: "red",
-        marginTop: 100,
-        width: 300,
-        height: 300,
-        borderColor: "black",
-        borderWidth: 1
-      }}
-    >
-      {typeof children === "string" ? (
-        <Text style={{ color: "black" }}>{children}</Text>
-      ) : (
-        children
-      )}
-    </View>
+    <TouchableOpacity>
+      <View
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#012F2D",
+          width: 300,
+          height: 55,
+          borderRadius: 16,
+          borderWidth: 1
+        }}
+      >
+        {typeof children === "string" ? (
+          <Text style={{ color: "white", fontSize: 18, fontWeight: "bold" }}>
+            {children}
+          </Text>
+        ) : (
+          children
+        )}
+      </View>
+    </TouchableOpacity>
   );
 };
 

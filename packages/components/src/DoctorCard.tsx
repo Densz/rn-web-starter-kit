@@ -10,12 +10,14 @@ const DoctorCard = ({ name, profession, address }: any) => {
       style={{
         flex: 1,
         minHeight: 120,
-        borderColor: "black",
-        borderWidth: 1,
         borderRadius: 10,
         backgroundColor: "white",
         padding: 15,
-        flexDirection: "row"
+        flexDirection: "row",
+        shadowColor: "grey",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 2
       }}
     >
       <View
