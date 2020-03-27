@@ -8,11 +8,10 @@ const Button = ({ children }: { children: JSX.Element | string }) => {
         style={{
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#012F2D",
+          backgroundColor: "blue",
           width: 300,
           height: 55,
-          borderRadius: 16,
-          borderWidth: 1
+          borderRadius: 16
         }}
       >
         {typeof children === "string" ? (

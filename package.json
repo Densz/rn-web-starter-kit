@@ -11,7 +11,8 @@
     "app:android": "yarn workspace @beys/mobile run android",
     "clean": "rm -rf node_modules */**/node_modules",
     "build:components": "yarn workspace @beys/components compile",
-    "watch": "wml add ./packages/components ./packages/mobile/node_modules/@beys/components && wml start"
+    "watch": "yarn workspace @beys/components run build && wml add ./packages/components ./packages/mobile/node_modules/@beys/components && wml start",
+    "dev": "yarn run watch"
   },
   "author": "",
   "license": "ISC",
